@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:background="#dddddd" >
+
+        <ImageView
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bestman" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/result"
+            android:textColor="#717171"
+            android:textSize="18sp" />
+
+       
+
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/result_sfv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/jiancetime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/testing_time" />
+        <TextView 
+            android:id="@+id/totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/jiancetime"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/result_record"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:background="@drawable/connect_style"
+        android:text="@string/record" />
+
+</LinearLayout>

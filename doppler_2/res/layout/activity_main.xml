@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b_ground"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title"/>
+
+    <android.support.v4.view.ViewPager
+         android:id="@+id/guidePages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        
+        android:background="@drawable/home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/b_ground"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LL_shebei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/IM_shebei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/b_ground"
+                android:src="@drawable/record1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device"
+                 android:textColor="@color/t_color"
+                android:textSize="17sp" />
+            
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+             android:background="#66f3f3f3" 
+             android:layout_marginBottom="5dp"
+             />
+        
+
+       <LinearLayout
+            android:id="@+id/LL_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/IM_Record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/b_ground"
+                android:src="@drawable/shebei" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/record"
+                 android:textColor="@color/t_color"
+                android:textSize="17sp" />
+        </LinearLayout>
+         <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+             android:background="#66f3f3f3" 
+             android:layout_marginBottom="5dp"
+             />
+
+        <LinearLayout
+            android:id="@+id/LL_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/IM_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/b_ground"
+                android:src="@drawable/info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/t_color"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

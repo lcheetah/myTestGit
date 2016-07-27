@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">doppler</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name = "device">设备</string>
+    <string name = "record">记录</string>
+    <string name = "more">更多</string>
+    <string name = "toast2">您的设备不支持BLE</string>
+    <string name = "toast3">再按一次退出程序</string>
+     <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开连接</string>
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止扫描</string>
+    <string name="Welcome">欢迎</string>
+    <string name="url">www.szbestman.com</string>
+	<string name = "replay">重新回放</string>
+    <string name = "click_to_replay">点击回放</string>
+    <string name = "pause">暂停回放</string>
+    <string name = "continue_1">继续回放</string>
+    <string name = "Confirm_to_delete">确认删除？</string>
+    <string name = "note">提示</string>
+    <string name = "confirm">确认</string>
+    <string name = "cancel">取消</string>
+    <string name = "heart_rate">心率</string>
+    <string name = "version">版本信息</string>
+    <string name = "about_us">关于我们</string>
+    <string name = "testing_time">检测用时:</string>
+    <string name = "result">检测结果</string>
+    <string name = "delete">删除</string>
+    <string name = "start_testing">开始检测</string>
+    <string name = "pt_name">德科多普勒胎心仪</string>
+    <string name = "Stop_testing">停止检测</string>
+    <string name = "toast4">检测结果已保存,请勿重复保存</string>
+      <string name = "sava">检测结果已保存</string>
+      <string name="open_Device">请开启胎心仪</string>
+      
+      
+          <string name="record_start">记录开始</string>
+    <string name="recording">记录中...</string>
+    <string name="record_finished">记录结束</string>
+    <string name="bluetooth_relieve">蓝牙服务解除中...</string>
+    <string name="bluetooth_relived">蓝牙服务已经解除</string>
+    <string name="open_bluetooth">请先开启蓝牙</string>
+    <string name="bluetooth_service_start">蓝牙服务启动中...</string>
+    <string name="device_connected">已经连接设备</string>
+    <string name="device_connectting">开始连接...</string>
+    <string name="no_device_select">还没有选择设备</string>
+    <string name="start_bluetooth_connect">请先启动蓝牙连接</string>
+    
+    <string name="read_data_start">连接完成，启动数据读取</string>
+    <string name="service_get_socket_fail">获取Socket失败</string>
+    <string name="service_get_socket_ok">socket连接成功</string>
+    <string name="service_get_inputstream_fail">获取输入流失败</string>
+    <string name="service_get_inputstream_ok">获取输入流完成</string>
+    <string name="service_read_data_fail">读取数据异常，蓝牙断开</string>
+    
+    <string name="action_help">帮助</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">实时数据:</string>
+    <string name="label_device_address">设备地址:</string>
+    <string name="label_state">状态:</string>
+    <string name="no_data">--</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="title_devices">扫描设备</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name = "toast5">检测时间太短，请继续检测</string>
+    
+    <string name = "Test_time">检测时间：</string>
+    
+
+    
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+      
+
+</resources>
