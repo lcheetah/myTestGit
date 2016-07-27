@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
 	private static final int REQUEST_ENABLE_BT = 1;
 	private BluetoothDevice mdevice;
 //	private ImageView iView;
-	private ImageView[] iViews;
 	int[] imgs = new int[] { R.drawable.img_1, R.drawable.img_2, R.drawable.img_3,
 			R.drawable.img_4};
 	private List<ImageView> mImageViews = new ArrayList<ImageView>();  
