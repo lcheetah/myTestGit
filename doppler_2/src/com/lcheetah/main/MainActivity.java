@@ -37,9 +37,7 @@ import android.widget.ImageView.ScaleType;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
-
-	
+public class MainActivity extends Activity {	
 	private ImageButton Im_shebei;
 	private ImageButton Im_record;
 	private ImageButton Im_more;
