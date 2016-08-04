@@ -108,7 +108,7 @@ public class RecordActivity extends Activity {
 		SQLiteDatabase db = openOrCreateDatabase("data.db",
 				ResultActivity.MODE_PRIVATE, null);
 		Cursor c = db.query("datatb", null, "_id>?", new String[] { "0" },
-				null, null, "date");
+				null, null, "date DESC");
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy年MM月dd日    HH:mm:ss     ");
 		SimpleDateFormat eformatter = new SimpleDateFormat("dd MMMM yyyy    HH:mm:ss     ");
 		if (c != null) {

@@ -4,7 +4,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import com.lcheetah.doppler.R;
-import com.lcheetah.main.MainActivity;
 
 import android.app.Activity;
 import android.content.Intent;

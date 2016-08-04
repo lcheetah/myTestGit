@@ -49,7 +49,7 @@ public class ResultActivity extends Activity {
 	// private TextView result_TV;
 	private Button record_BT;
 	private SurfaceHolder mSurfaceHolder;
-	private Paint paint, paint1, paint2, paint3, paint4;
+	private Paint paint, paint1, paint2, paint3, paint4,paint5;
 	private Canvas canvas;
 	private float ScreenW, ScreenH;
 	private String totaltime;
@@ -202,7 +202,7 @@ public class ResultActivity extends Activity {
 
 			canvas = mSurfaceHolder.lockCanvas();
 			if (canvas != null) {
-				canvas.drawColor(Color.WHITE);
+				canvas.drawColor(Color.BLACK);
 
 				canvas.drawText("FHR", ScreenW / 20 - 10, ScreenH / 20 - 10,
 						paint);
@@ -211,8 +211,13 @@ public class ResultActivity extends Activity {
 						11 * (ScreenH / 17), paint4);
 
 				for (int i = 0; i < 17; i++) {
-					canvas.drawLine(ScreenW / 10, (i + 1) * (ScreenH / 17),
-							ScreenW, (i + 1) * (ScreenH / 17), paint);
+					if (5<=i&&i<=10) {
+						canvas.drawLine(ScreenW / 10, (i + 1) * (ScreenH / 17),
+								ScreenW, (i + 1) * (ScreenH / 17), paint5);
+				}else{
+				canvas.drawLine(ScreenW / 10, (i + 1) * (ScreenH / 17),
+						ScreenW, (i + 1) * (ScreenH / 17), paint);
+				}
 					int o = 210 - 10 * i;
 					canvas.drawText(o + "", ScreenW / 20 - 10, (i + 1)
 							* (ScreenH / 17) + 5, paint3);
@@ -225,6 +230,7 @@ public class ResultActivity extends Activity {
 					} else {
 						canvas.drawLine(j * (ScreenW / 10), (ScreenH / 17), j
 								* (ScreenW / 10), ScreenH, paint1);
+						canvas.drawLine(j*(ScreenW/10),(ScreenH/17)*6 ,j*(ScreenW/10) ,(ScreenH/17)*11, paint5);
 					}
 				}
 
@@ -305,27 +311,32 @@ public class ResultActivity extends Activity {
 			paint2 = new Paint();
 			paint3 = new Paint();
 			paint4 = new Paint();
+			paint5 = new Paint();
 
-			paint.setColor(Color.RED);
+			paint.setColor(Color.rgb(250, 234, 100));
 			paint.setTextSize(20);
 			paint.setAntiAlias(true);
 
-			paint1.setColor(Color.RED);
+			paint1.setColor(Color.rgb(250, 234, 100));
 			PathEffect effects = new DashPathEffect(new float[] { 8, 4, 8, 4 },
 					1);
 			paint1.setPathEffect(effects);
 			paint1.setAntiAlias(true);
 
 			paint2.setStrokeWidth(5);
-			paint2.setColor(Color.RED);
+			paint2.setColor(Color.WHITE);
 			paint2.setAntiAlias(true);
 
-			paint3.setColor(Color.BLUE);
+			paint3.setColor(Color.WHITE);
 			paint3.setStrokeWidth(3);
 			paint3.setTextSize(20);
 			paint3.setAntiAlias(true);
 
-			paint4.setColor(Color.rgb(197, 226, 201));
+			paint4.setColor(Color.rgb(73, 73, 73));
+			
+			paint5.setColor(Color.rgb(48,172,206));
+			paint5.setStrokeWidth(3);
+			paint5.setAntiAlias(true);
 			doDraw();
 
 			mydraw();
@@ -352,7 +363,7 @@ public class ResultActivity extends Activity {
 
 			if (bitCanvas != null) {
 
-				bitCanvas.drawColor(Color.WHITE);
+				bitCanvas.drawColor(Color.BLACK);
 
 				bitCanvas.drawText("FHR", ScreenW / 20 - 10, ScreenH / 20 - 10,
 						paint);

@@ -43,6 +43,7 @@
             android:layout_alignParentTop="true"
             android:gravity="center_vertical"
             android:layout_marginRight="10dp"
+            android:textColor="@color/t_color"
             android:text="00:00:00"/>
 
     </RelativeLayout>

@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.lcheetah.main.MainActivity"></activity>
+        <activity android:name="com.lcheetah.activity.MainActivity"></activity>
         <activity android:name="com.lcheetah.activity.DeviceControlActivity"></activity>
         <activity android:name="com.lcheetah.activity.CheckActivity"></activity>
         <activity android:name="com.lcheetah.activity.RecordActivity"></activity>

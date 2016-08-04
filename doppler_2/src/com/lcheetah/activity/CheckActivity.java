@@ -70,7 +70,7 @@ public class CheckActivity extends Activity {
 		SQLiteDatabase db = openOrCreateDatabase("data.db",
 				ResultActivity.MODE_PRIVATE, null);
 		Cursor c = db.query("datatb", null, "date=?", new String[] { time },
-				null, null, "date");
+				null, null, null);
 		if (c != null) {
 			while (c.moveToNext()) {
 				// result = c.getString(c.getColumnIndex("result"));
@@ -169,12 +169,6 @@ public class CheckActivity extends Activity {
                   .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                       @Override
                       public void onClick(SweetAlertDialog sDialog) {
-                    	  SQLiteDatabase db = openOrCreateDatabase(
-                    			  "data.db", MODE_PRIVATE, null);
-                    	  db.delete("datatb", "date=?",
-                    			  new String[] { time });
-                    	  db.close();
-                    	  finish();
                           sDialog.setTitleText("Deleted!")
                                   .setContentText("Your imaginary file has been deleted!")
                                   .setConfirmText("OK")
@@ -182,6 +176,12 @@ public class CheckActivity extends Activity {
                                   .setCancelClickListener(null)
                                   .setConfirmClickListener(null)
                                   .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
+                          SQLiteDatabase db = openOrCreateDatabase(
+                        		  "data.db", MODE_PRIVATE, null);
+                          db.delete("datatb", "date=?",
+                        		  new String[] { time });
+                          db.close();
+                          finish();
                       }
                   })
                   .show();

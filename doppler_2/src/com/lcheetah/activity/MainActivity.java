@@ -1,12 +1,10 @@
-package com.lcheetah.main;
+package com.lcheetah.activity;
 
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.lcheetah.activity.DeviceControlActivity;
-import com.lcheetah.activity.RecordActivity;
 import com.lcheetah.doppler.R;
 import com.lcheetah.view.DepthPageTransformer;
 import com.lcheetah.view.FixedSpeedScroller;

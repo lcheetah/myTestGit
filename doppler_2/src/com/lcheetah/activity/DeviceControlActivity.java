@@ -435,10 +435,8 @@ public class DeviceControlActivity extends Activity implements Runnable {
 
 				for (int i = 0; i < 17; i++) {
 					if (5<=i&&i<=10) {
-						
 							canvas.drawLine(ScreenW / 10, (i + 1) * (ScreenH / 17),
 									ScreenW, (i + 1) * (ScreenH / 17), paint5);
-						
 					}else{
 					canvas.drawLine(ScreenW / 10, (i + 1) * (ScreenH / 17),
 							ScreenW, (i + 1) * (ScreenH / 17), paint);
